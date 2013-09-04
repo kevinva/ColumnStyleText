@@ -25,12 +25,12 @@
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"plist"];
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:filePath];
     NSString *content = [dict objectForKey:@"content"];
-    NSAttributedString *attContent = [[NSAttributedString alloc] initWithString:content];
-    [dict release];
     
-    _pageView.attributedString = attContent;
-    [attContent release];
+    _pageView.contentText = content;
+    _pageView.font = [UIFont systemFontOfSize:20.0f];
     [_pageView buildColumns];
+    
+    [dict release];
 }
 
 - (void)didReceiveMemoryWarning

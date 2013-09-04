@@ -13,15 +13,6 @@
 
 @implementation HzTextBaseView
 
-- (id)initWithAttributedString:(NSAttributedString *)aString{
-    self = [super init];
-    if(self){
-        self.attributedString = aString;
-    }
-    
-    return self;
-}
-
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
@@ -33,7 +24,8 @@
 
 - (void)dealloc{
     self.frames= nil;
-    self.attributedString = nil;
+    self.contentText = nil;
+    self.font = nil;
     
     [super dealloc];
 }
@@ -41,6 +33,10 @@
 #pragma mark - Public methods
 
 - (void)buildColumns{
+    CTFontRef ctFont = CTFontCreateWithName((CFStringRef)_font.fontName, _font.pointSize, NULL);
+    NSDictionary *attribute = [NSDictionary dictionaryWithObjectsAndKeys:(id)ctFont, kCTFontAttributeName, nil];
+    NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:_contentText attributes:attribute];
+    
     CGFloat frameXOffset = 20.0f;
     CGFloat frameYOffset = 20.0f;
     self.pagingEnabled = YES;
@@ -48,11 +44,11 @@
     self.frames = [NSMutableArray array];
     
     CGRect textFrame = CGRectInset(self.bounds, frameXOffset, frameYOffset);
-    CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString((CFAttributedStringRef)_attributedString);
+    CTFramesetterRef framesetter = CTFramesetterCreateWithAttributedString((CFAttributedStringRef)attributedString);
 
     NSInteger textPos = 0;
     NSInteger columnIndex = 0;
-    while(textPos < _attributedString.length){
+    while(textPos < attributedString.length){
         CGPoint columnOffSet = CGPointMake((columnIndex + 1) * frameXOffset + columnIndex * textFrame.size.width / 2, 20.0f);
         CGRect columnRect = CGRectMake(0.0f, 0.0f, textFrame.size.width / 2 - 10, textFrame.size.height - 10);
         CGMutablePathRef path = CGPathCreateMutable();
@@ -76,6 +72,8 @@
     
     NSInteger totalPages = (columnIndex + 1) / 2;
     self.contentSize = CGSizeMake(totalPages * self.bounds.size.width, textFrame.size.height);
+    
+    [attributedString release];
 }
 
 @end
