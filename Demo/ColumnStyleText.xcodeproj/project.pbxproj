@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8252D0EB17D6DB3F002466A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8252D0EA17D6DB3F002466A4 /* UIKit.framework */; };
+		8252D0ED17D6DB3F002466A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8252D0EC17D6DB3F002466A4 /* Foundation.framework */; };
+		8252D0EF17D6DB3F002466A4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8252D0EE17D6DB3F002466A4 /* CoreGraphics.framework */; };
+		8252D0F517D6DB3F002466A4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8252D0F317D6DB3F002466A4 /* InfoPlist.strings */; };
+		8252D0F717D6DB3F002466A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8252D0F617D6DB3F002466A4 /* main.m */; };
+		8252D0FB17D6DB3F002466A4 /* HzAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8252D0FA17D6DB3F002466A4 /* HzAppDelegate.m */; };
+		8252D0FD17D6DB3F002466A4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8252D0FC17D6DB3F002466A4 /* Default.png */; };
+		8252D0FF17D6DB3F002466A4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8252D0FE17D6DB3F002466A4 /* Default@2x.png */; };
+		8252D10117D6DB3F002466A4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8252D10017D6DB3F002466A4 /* Default-568h@2x.png */; };
+		8252D10417D6DB3F002466A4 /* HzViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8252D10317D6DB3F002466A4 /* HzViewController.m */; };
+		8252D10717D6DB3F002466A4 /* HzViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8252D10517D6DB3F002466A4 /* HzViewController.xib */; };
+		8252D10F17D6DD0B002466A4 /* HzTextBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8252D10E17D6DD0B002466A4 /* HzTextBaseView.m */; };
+		8252D11217D6DD1A002466A4 /* HzColumnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8252D11117D6DD1A002466A4 /* HzColumnView.m */; };
+		8252D11417D6DDB8002466A4 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8252D11317D6DDB8002466A4 /* CoreText.framework */; };
+		8252D11817D6E6F6002466A4 /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8252D11717D6E6F6002466A4 /* test.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8252D0E717D6DB3F002466A4 /* ColumnStyleText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColumnStyleText.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8252D0EA17D6DB3F002466A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8252D0EC17D6DB3F002466A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8252D0EE17D6DB3F002466A4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8252D0F217D6DB3F002466A4 /* ColumnStyleText-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ColumnStyleText-Info.plist"; sourceTree = "<group>"; };
+		8252D0F417D6DB3F002466A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8252D0F617D6DB3F002466A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8252D0F817D6DB3F002466A4 /* ColumnStyleText-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ColumnStyleText-Prefix.pch"; sourceTree = "<group>"; };
+		8252D0F917D6DB3F002466A4 /* HzAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HzAppDelegate.h; sourceTree = "<group>"; };
+		8252D0FA17D6DB3F002466A4 /* HzAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HzAppDelegate.m; sourceTree = "<group>"; };
+		8252D0FC17D6DB3F002466A4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8252D0FE17D6DB3F002466A4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		8252D10017D6DB3F002466A4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8252D10217D6DB3F002466A4 /* HzViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HzViewController.h; sourceTree = "<group>"; };
+		8252D10317D6DB3F002466A4 /* HzViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HzViewController.m; sourceTree = "<group>"; };
+		8252D10617D6DB3F002466A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HzViewController.xib; sourceTree = "<group>"; };
+		8252D10D17D6DD0B002466A4 /* HzTextBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HzTextBaseView.h; sourceTree = "<group>"; };
+		8252D10E17D6DD0B002466A4 /* HzTextBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HzTextBaseView.m; sourceTree = "<group>"; };
+		8252D11017D6DD1A002466A4 /* HzColumnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HzColumnView.h; sourceTree = "<group>"; };
+		8252D11117D6DD1A002466A4 /* HzColumnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HzColumnView.m; sourceTree = "<group>"; };
+		8252D11317D6DDB8002466A4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		8252D11717D6E6F6002466A4 /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8252D0E417D6DB3F002466A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8252D11417D6DDB8002466A4 /* CoreText.framework in Frameworks */,
+				8252D0EB17D6DB3F002466A4 /* UIKit.framework in Frameworks */,
+				8252D0ED17D6DB3F002466A4 /* Foundation.framework in Frameworks */,
+				8252D0EF17D6DB3F002466A4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8252D0DE17D6DB3F002466A4 = {
+			isa = PBXGroup;
+			children = (
+				8252D0F017D6DB3F002466A4 /* ColumnStyleText */,
+				8252D0E917D6DB3F002466A4 /* Frameworks */,
+				8252D0E817D6DB3F002466A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8252D0E817D6DB3F002466A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8252D0E717D6DB3F002466A4 /* ColumnStyleText.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8252D0E917D6DB3F002466A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8252D11317D6DDB8002466A4 /* CoreText.framework */,
+				8252D0EA17D6DB3F002466A4 /* UIKit.framework */,
+				8252D0EC17D6DB3F002466A4 /* Foundation.framework */,
+				8252D0EE17D6DB3F002466A4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8252D0F017D6DB3F002466A4 /* ColumnStyleText */ = {
+			isa = PBXGroup;
+			children = (
+				8252D11617D6E6E1002466A4 /* src */,
+				8252D11517D6E6CF002466A4 /* resources */,
+				8252D0F917D6DB3F002466A4 /* HzAppDelegate.h */,
+				8252D0FA17D6DB3F002466A4 /* HzAppDelegate.m */,
+				8252D10217D6DB3F002466A4 /* HzViewController.h */,
+				8252D10317D6DB3F002466A4 /* HzViewController.m */,
+				8252D10517D6DB3F002466A4 /* HzViewController.xib */,
+				8252D0F117D6DB3F002466A4 /* Supporting Files */,
+			);
+			path = ColumnStyleText;
+			sourceTree = "<group>";
+		};
+		8252D0F117D6DB3F002466A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8252D0F217D6DB3F002466A4 /* ColumnStyleText-Info.plist */,
+				8252D0F317D6DB3F002466A4 /* InfoPlist.strings */,
+				8252D0F617D6DB3F002466A4 /* main.m */,
+				8252D0F817D6DB3F002466A4 /* ColumnStyleText-Prefix.pch */,
+				8252D0FC17D6DB3F002466A4 /* Default.png */,
+				8252D0FE17D6DB3F002466A4 /* Default@2x.png */,
+				8252D10017D6DB3F002466A4 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8252D11517D6E6CF002466A4 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				8252D11717D6E6F6002466A4 /* test.plist */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		8252D11617D6E6E1002466A4 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8252D10D17D6DD0B002466A4 /* HzTextBaseView.h */,
+				8252D10E17D6DD0B002466A4 /* HzTextBaseView.m */,
+				8252D11017D6DD1A002466A4 /* HzColumnView.h */,
+				8252D11117D6DD1A002466A4 /* HzColumnView.m */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8252D0E617D6DB3F002466A4 /* ColumnStyleText */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8252D10A17D6DB3F002466A4 /* Build configuration list for PBXNativeTarget "ColumnStyleText" */;
+			buildPhases = (
+				8252D0E317D6DB3F002466A4 /* Sources */,
+				8252D0E417D6DB3F002466A4 /* Frameworks */,
+				8252D0E517D6DB3F002466A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColumnStyleText;
+			productName = ColumnStyleText;
+			productReference = 8252D0E717D6DB3F002466A4 /* ColumnStyleText.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8252D0DF17D6DB3F002466A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Hz;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "何 峙";
+			};
+			buildConfigurationList = 8252D0E217D6DB3F002466A4 /* Build configuration list for PBXProject "ColumnStyleText" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8252D0DE17D6DB3F002466A4;
+			productRefGroup = 8252D0E817D6DB3F002466A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8252D0E617D6DB3F002466A4 /* ColumnStyleText */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8252D0E517D6DB3F002466A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8252D0F517D6DB3F002466A4 /* InfoPlist.strings in Resources */,
+				8252D0FD17D6DB3F002466A4 /* Default.png in Resources */,
+				8252D0FF17D6DB3F002466A4 /* Default@2x.png in Resources */,
+				8252D10117D6DB3F002466A4 /* Default-568h@2x.png in Resources */,
+				8252D10717D6DB3F002466A4 /* HzViewController.xib in Resources */,
+				8252D11817D6E6F6002466A4 /* test.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8252D0E317D6DB3F002466A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8252D0F717D6DB3F002466A4 /* main.m in Sources */,
+				8252D0FB17D6DB3F002466A4 /* HzAppDelegate.m in Sources */,
+				8252D10417D6DB3F002466A4 /* HzViewController.m in Sources */,
+				8252D10F17D6DD0B002466A4 /* HzTextBaseView.m in Sources */,
+				8252D11217D6DD1A002466A4 /* HzColumnView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8252D0F317D6DB3F002466A4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8252D0F417D6DB3F002466A4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8252D10517D6DB3F002466A4 /* HzViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8252D10617D6DB3F002466A4 /* en */,
+			);
+			name = HzViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8252D10817D6DB3F002466A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		8252D10917D6DB3F002466A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8252D10B17D6DB3F002466A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColumnStyleText/ColumnStyleText-Prefix.pch";
+				INFOPLIST_FILE = "ColumnStyleText/ColumnStyleText-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8252D10C17D6DB3F002466A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ColumnStyleText/ColumnStyleText-Prefix.pch";
+				INFOPLIST_FILE = "ColumnStyleText/ColumnStyleText-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8252D0E217D6DB3F002466A4 /* Build configuration list for PBXProject "ColumnStyleText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8252D10817D6DB3F002466A4 /* Debug */,
+				8252D10917D6DB3F002466A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8252D10A17D6DB3F002466A4 /* Build configuration list for PBXNativeTarget "ColumnStyleText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8252D10B17D6DB3F002466A4 /* Debug */,
+				8252D10C17D6DB3F002466A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8252D0DF17D6DB3F002466A4 /* Project object */;
+}
