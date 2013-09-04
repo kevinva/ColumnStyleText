@@ -11,9 +11,9 @@
 @interface HzTextBaseView : UIScrollView
 
 @property (nonatomic, retain) NSMutableArray *frames;
-@property (nonatomic, retain) NSAttributedString *attributedString;
+@property (nonatomic, retain) NSString *contentText;
+@property (nonatomic, retain) UIFont *font;
 
-- (id)initWithAttributedString:(NSAttributedString *)aString;
 - (void)buildColumns;
 
 @end

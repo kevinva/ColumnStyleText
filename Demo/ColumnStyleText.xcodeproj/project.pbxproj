@@ -18,10 +18,10 @@
 		8252D10117D6DB3F002466A4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8252D10017D6DB3F002466A4 /* Default-568h@2x.png */; };
 		8252D10417D6DB3F002466A4 /* HzViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8252D10317D6DB3F002466A4 /* HzViewController.m */; };
 		8252D10717D6DB3F002466A4 /* HzViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8252D10517D6DB3F002466A4 /* HzViewController.xib */; };
-		8252D10F17D6DD0B002466A4 /* HzTextBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8252D10E17D6DD0B002466A4 /* HzTextBaseView.m */; };
-		8252D11217D6DD1A002466A4 /* HzColumnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8252D11117D6DD1A002466A4 /* HzColumnView.m */; };
 		8252D11417D6DDB8002466A4 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8252D11317D6DDB8002466A4 /* CoreText.framework */; };
 		8252D11817D6E6F6002466A4 /* test.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8252D11717D6E6F6002466A4 /* test.plist */; };
+		82667D9217D70CF0007DE74C /* HzColumnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82667D8F17D70CF0007DE74C /* HzColumnView.m */; };
+		82667D9317D70CF0007DE74C /* HzTextBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82667D9117D70CF0007DE74C /* HzTextBaseView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,12 +41,12 @@
 		8252D10217D6DB3F002466A4 /* HzViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HzViewController.h; sourceTree = "<group>"; };
 		8252D10317D6DB3F002466A4 /* HzViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HzViewController.m; sourceTree = "<group>"; };
 		8252D10617D6DB3F002466A4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HzViewController.xib; sourceTree = "<group>"; };
-		8252D10D17D6DD0B002466A4 /* HzTextBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HzTextBaseView.h; sourceTree = "<group>"; };
-		8252D10E17D6DD0B002466A4 /* HzTextBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HzTextBaseView.m; sourceTree = "<group>"; };
-		8252D11017D6DD1A002466A4 /* HzColumnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HzColumnView.h; sourceTree = "<group>"; };
-		8252D11117D6DD1A002466A4 /* HzColumnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HzColumnView.m; sourceTree = "<group>"; };
 		8252D11317D6DDB8002466A4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		8252D11717D6E6F6002466A4 /* test.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = test.plist; sourceTree = "<group>"; };
+		82667D8E17D70CF0007DE74C /* HzColumnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HzColumnView.h; sourceTree = "<group>"; };
+		82667D8F17D70CF0007DE74C /* HzColumnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HzColumnView.m; sourceTree = "<group>"; };
+		82667D9017D70CF0007DE74C /* HzTextBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HzTextBaseView.h; sourceTree = "<group>"; };
+		82667D9117D70CF0007DE74C /* HzTextBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HzTextBaseView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,7 @@
 		8252D0F017D6DB3F002466A4 /* ColumnStyleText */ = {
 			isa = PBXGroup;
 			children = (
-				8252D11617D6E6E1002466A4 /* src */,
+				82667D8D17D70CF0007DE74C /* src */,
 				8252D11517D6E6CF002466A4 /* resources */,
 				8252D0F917D6DB3F002466A4 /* HzAppDelegate.h */,
 				8252D0FA17D6DB3F002466A4 /* HzAppDelegate.m */,
@@ -129,15 +129,16 @@
 			name = resources;
 			sourceTree = "<group>";
 		};
-		8252D11617D6E6E1002466A4 /* src */ = {
+		82667D8D17D70CF0007DE74C /* src */ = {
 			isa = PBXGroup;
 			children = (
-				8252D10D17D6DD0B002466A4 /* HzTextBaseView.h */,
-				8252D10E17D6DD0B002466A4 /* HzTextBaseView.m */,
-				8252D11017D6DD1A002466A4 /* HzColumnView.h */,
-				8252D11117D6DD1A002466A4 /* HzColumnView.m */,
+				82667D8E17D70CF0007DE74C /* HzColumnView.h */,
+				82667D8F17D70CF0007DE74C /* HzColumnView.m */,
+				82667D9017D70CF0007DE74C /* HzTextBaseView.h */,
+				82667D9117D70CF0007DE74C /* HzTextBaseView.m */,
 			);
 			name = src;
+			path = ../../src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,8 +212,8 @@
 				8252D0F717D6DB3F002466A4 /* main.m in Sources */,
 				8252D0FB17D6DB3F002466A4 /* HzAppDelegate.m in Sources */,
 				8252D10417D6DB3F002466A4 /* HzViewController.m in Sources */,
-				8252D10F17D6DD0B002466A4 /* HzTextBaseView.m in Sources */,
-				8252D11217D6DD1A002466A4 /* HzColumnView.m in Sources */,
+				82667D9217D70CF0007DE74C /* HzColumnView.m in Sources */,
+				82667D9317D70CF0007DE74C /* HzTextBaseView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +336,7 @@
 				8252D10C17D6DB3F002466A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
