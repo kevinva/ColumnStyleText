@@ -10,6 +10,11 @@
 #import <CoreText/CoreText.h>
 #import "HzColumnView.h"
 
+@interface HzTextBaseView ()
+
+@property (nonatomic, retain) NSMutableArray *frames;
+
+@end
 
 @implementation HzTextBaseView
 
@@ -33,9 +38,32 @@
 #pragma mark - Public methods
 
 - (void)buildColumns{
+    CTParagraphStyleSetting lineBreak;
+    CTLineBreakMode lineBreakMode = kCTLineBreakByWordWrapping;
+    lineBreak.spec = kCTParagraphStyleSpecifierLineBreakMode;
+    lineBreak.value = &lineBreakMode;
+    lineBreak.valueSize = sizeof(CTLineBreakMode);
+    
+    //设置行距
+    CTParagraphStyleSetting lineSpacing;
+    CGFloat spacing = 8.0f;
+    if(_lineSpace > 0){
+        spacing = _lineSpace;
+    }
+    lineSpacing.spec = kCTParagraphStyleSpecifierLineSpacingAdjustment;
+    lineSpacing.value = &spacing;
+    lineSpacing.valueSize = sizeof(CGFloat);
+    
+    CTParagraphStyleSetting settings[] = {lineBreak, lineSpacing};
+    CTParagraphStyleRef paragraphStyle = CTParagraphStyleCreate(settings, 2);
+    
     CTFontRef ctFont = CTFontCreateWithName((CFStringRef)_font.fontName, _font.pointSize, NULL);
-    NSDictionary *attribute = [NSDictionary dictionaryWithObjectsAndKeys:(id)ctFont, kCTFontAttributeName, nil];
+    NSDictionary *attribute = [NSDictionary dictionaryWithObjectsAndKeys:
+                               (id)ctFont, kCTFontAttributeName,
+                               (id)paragraphStyle, kCTParagraphStyleAttributeName, nil];
     NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:_contentText attributes:attribute];
+    CFRelease(paragraphStyle);
+    CFRelease(ctFont);
     
     CGFloat frameXOffset = 20.0f;
     CGFloat frameYOffset = 20.0f;

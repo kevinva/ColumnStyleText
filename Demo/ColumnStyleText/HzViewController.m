@@ -28,6 +28,7 @@
     
     _pageView.contentText = content;
     _pageView.font = [UIFont systemFontOfSize:20.0f];
+    _pageView.lineSpace = 5.0f;
     [_pageView buildColumns];
     
     [dict release];
